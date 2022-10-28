@@ -1,0 +1,34 @@
+.homepage{
+    padding: 64px 112px 0px 112px;
+
+    .homepage-wrapper{
+        padding: 0px 32px 64px 32px;
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1020px){
+    .homepage{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .homepage{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .homepage{
+        .homepage-wrapper{
+            padding: 0px 12px 64px 12px;
+        }
+    }
+    
+    
+    
+}

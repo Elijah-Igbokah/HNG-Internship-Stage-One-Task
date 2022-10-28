@@ -1,0 +1,11 @@
+.social-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 24px;
+        height: 24px;
+    }
+}
