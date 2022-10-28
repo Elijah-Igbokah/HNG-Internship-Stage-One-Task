@@ -1,4 +1,4 @@
-import profileImage from "../../images/pexels-kebs-visuals-3992656.jpg";
+import profileImage from "../../images/png_20220426_120123_1.png";
 
 export const UserDetails = [
     {
