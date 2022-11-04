@@ -28,8 +28,6 @@ const Profile =() => {
                         <a href="/">
                             <img className='content-button' src={contentBtn} alt="" />
                         </a>
-                        
-                        
                     </div>
                 )
             })

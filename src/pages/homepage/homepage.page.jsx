@@ -1,9 +1,9 @@
 import React from 'react';
-import Center from '../components/center/center.component';
-import Footer from '../components/footer/footer.component';
-import LinkButtons from '../components/link-buttons/link-buttons.component';
-import Profile from '../components/profile/profile.component';
-import SocialIcons from '../components/social icons/social-section.components';
+import Center from '../../components/center/center.component';
+import Footer from '../../components/footer/footer.component';
+import LinkButtons from '../../components/link-buttons/link-buttons.component';
+import Profile from '../../components/profile/profile.component';
+import SocialIcons from '../../components/social icons/social-section.components';
 import "./homepage.styles.scss";
 
 
