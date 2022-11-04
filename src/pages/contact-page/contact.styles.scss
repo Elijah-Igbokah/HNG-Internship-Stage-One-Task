@@ -1,3 +1,44 @@
+.contact-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 92px 0px;
+
+    .contact-form{
+        width: 720px;
+        height: 500px;
+
+        h1{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            color: #101828;
+        }
+        &>p{
+            font-size: 20px;
+            line-height: 30px;
+            color: #475467;
+
+        }
+
+        form{
+
+            .names{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                // justify-content: space-between;
+                column-gap: 24px;
+
+                .firstname, .lastname{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 .form-field{
     display: flex;
     flex-direction: column;

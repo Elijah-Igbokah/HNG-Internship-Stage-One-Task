@@ -17,26 +17,27 @@ const ContactPage =() => {
         setFormValues({...formValues, [name]: value});
         console.log(formValues);
     };
-    
-
+    const handleSubmit =(e) => {
+        e.preventDefault();
+    };
 
   return (
     <div className="contact-page">
-        <div>
+        <div className="contact-form">
             <h1>Contact Me</h1>
             <p>Hi there, contact me to ask me about anything you have in mind.</p>
-            <form>
-                <div>
-                    <div>
+            <form onSubmit={handleSubmit}>
+                <div className='names'>
+                    <div className='firstname'>
                         <div className="form-field">
-                            <label htmlFor="name">First name</label>
-                            <input type="text" name="name" placeholder='Enter your first name' id="" value={ formValues.firstName } onChange={handleChange}/>
+                            <label htmlFor="firstName">First name</label>
+                            <input type="text" name="firstName" placeholder='Enter your first name' id="" value={ formValues.firstName } onChange={handleChange}/>
                         </div>
                     </div>
-                    <div>
+                    <div className='lastname'>
                         <div className="form-field">
-                            <label htmlFor="name">Last name</label>
-                            <input type="text" name="name" placeholder='Enter your last name' id="" value={ formValues.lastName } onChange={handleChange}/>
+                            <label htmlFor="lastName">Last name</label>
+                            <input type="text" name="lastName" placeholder='Enter your last name' id="" value={ formValues.lastName } onChange={handleChange}/>
                         </div>
                     </div>
                 </div>
