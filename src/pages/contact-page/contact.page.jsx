@@ -39,26 +39,26 @@ const ContactPage =() => {
                     <div className='firstname'>
                         <div className="form-field">
                             <label htmlFor="firstName">First name</label>
-                            <input type="text" name="firstName" placeholder='Enter your first name' id="" value={ formValues.firstName } onChange={handleChange}/>
+                            <input type="text" name="firstName" placeholder='Enter your first name' id="first_name" value={ formValues.firstName } onChange={handleChange}/>
                         </div>
                     </div>
                     <div className='lastname'>
                         <div className="form-field">
                             <label htmlFor="lastName">Last name</label>
-                            <input type="text" name="lastName" placeholder='Enter your last name' id="" value={ formValues.lastName } onChange={handleChange}/>
+                            <input type="text" name="lastName" placeholder='Enter your last name' id="last_name" value={ formValues.lastName } onChange={handleChange}/>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div className="form-field">
                         <label htmlFor="email">Email</label>
-                        <input type="text" name="email" placeholder='yourname@email.com' id="" value={ formValues.email } onChange={handleChange}/>
+                        <input type="text" name="email" placeholder='yourname@email.com' id="email" value={ formValues.email } onChange={handleChange}/>
                     </div>        
                 </div>
                 <div>
                     <div className="form-field">
                         <label htmlFor="name">Message</label>
-                        <textarea type="text" name="message" placeholder="Send me a message and I'll reply as soon as possible" id=""  value={ formValues.message } onChange={handleChange}/>
+                        <textarea type="text" name="message" placeholder="Send me a message and I'll reply as soon as possible" id="message"  value={ formValues.message } onChange={handleChange}/>
                     </div>                    
                 </div>
                 <div className='check'>
@@ -67,7 +67,7 @@ const ContactPage =() => {
                 </div>
                 <div>
                     <div className="form-field">
-                        <input type="Submit" id="submit"/>
+                        <input type="Submit" id="btn__submit"/>
                     </div>
                 </div>
             </form>

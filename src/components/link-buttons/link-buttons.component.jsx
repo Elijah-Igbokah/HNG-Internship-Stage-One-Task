@@ -21,7 +21,7 @@ const LinkButtons =() => {
             })
         }
         <div className='link-button'>
-            <Link to="/contact" id="contact-form">
+            <Link to="/contact" id="contact">
                     Contact Me
             </Link>
         </div>
