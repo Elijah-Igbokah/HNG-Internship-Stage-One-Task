@@ -22,7 +22,7 @@ const LinkButtons =() => {
         }
         <div className='link-button'>
             <Link to="/contact" id="contact">
-                    Contact Me
+                    Contact
             </Link>
         </div>
       
