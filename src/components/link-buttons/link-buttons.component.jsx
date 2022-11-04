@@ -1,5 +1,6 @@
 import React from 'react';
 import { userLinks } from '../profile/profile-user';
+import { Link } from 'react-router-dom';
 import "./link-buttons.styles.scss";
 
 
@@ -19,6 +20,11 @@ const LinkButtons =() => {
                 )
             })
         }
+        <div className='link-button'>
+            <Link to="/contact" id="contact-form">
+                    Contact Me
+            </Link>
+        </div>
       
     </div>
   );
