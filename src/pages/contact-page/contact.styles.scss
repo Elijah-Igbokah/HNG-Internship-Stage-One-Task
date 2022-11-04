@@ -3,12 +3,8 @@
     justify-content: center;
     align-items: center;
     padding: 92px 20%;
-    // height: 100vh;
 
     .contact-form{
-        
-
-
         h1{
             font-weight: 600;
             font-size: 36px;
@@ -46,6 +42,7 @@
             .check{
                 display: flex;
                 gap: 10px;
+                margin-bottom: 32px;
             
                 &>label{
                     font-size: 12px;
@@ -119,10 +116,27 @@
             transform: scale(1.03);
         }
     }
+}
 
 
+@media screen and (max-width: 740px){
+    .contact-page{
+        padding: 92px 5%;
+    }
+}
+
+@media screen and (max-width: 512px){
+
+    .contact-form{
+        form{
+            .names{
+                display: block !important;
+                // flex-direction: column;
+            }
+        }
+    }
+
     
-    
-    
+
 }
 
