@@ -68,7 +68,7 @@ const ContactPage =() => {
                 <p className='selected'>{ isChecked ? "Not Selected" : "Selected"}</p>
                 <div>
                     <div className="form-field">
-                        <input type="Submit" id=""/>
+                        <input type="Submit" id="submit"/>
                     </div>
                 </div>
             </form>
