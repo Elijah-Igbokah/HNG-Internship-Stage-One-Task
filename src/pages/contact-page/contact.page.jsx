@@ -65,7 +65,6 @@ const ContactPage =() => {
                     <input type="checkbox" name="checkbox" id="checkbox"  checked={formValues.checkbox} onChange={handleCheck} />
                     <label htmlFor="checkbox">You agree to providing your data to {portfolioName} who may contact you.</label>
                 </div>
-                <p className='selected'>{ isChecked ? "Not Selected" : "Selected"}</p>
                 <div>
                     <div className="form-field">
                         <input type="Submit" id="submit"/>
