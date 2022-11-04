@@ -1,24 +1,32 @@
 import React, {useState} from 'react';
 
 import "./contact.styles.scss";
-// import FormField from '../../components/form-fields/form-fields.component';
 
 
 
 const ContactPage =() => {
 
-    const initialValues = {firstName: "", lastName:"", email:"", message:"", isChecked: false };
+    const portfolioName = "Elijah"
+
+    const initialValues = { firstName: "", lastName:"", email:"", message:"", checkbox: false };
 
     const [formValues, setFormValues] = useState(initialValues);
+    const [isChecked, setIsChecked] = useState(initialValues.checkbox);
 
     const handleChange = (e) => {
-        // console.log(e.target);
-        const { name, value } = e.target;
+        const { name, value} = e.target;
         setFormValues({...formValues, [name]: value});
-        console.log(formValues);
     };
+
+    const handleCheck = () => {
+        setIsChecked(!isChecked);
+        setFormValues({...formValues, checkbox:isChecked});
+    };
+
     const handleSubmit =(e) => {
         e.preventDefault();
+        console.log(formValues);
+
     };
 
   return (
@@ -44,7 +52,7 @@ const ContactPage =() => {
                 <div>
                     <div className="form-field">
                         <label htmlFor="email">Email</label>
-                        <input type="text" name="email" placeholder='yourname@email.com' id="" value={ formValues.isChecked } onChange={handleChange}/>
+                        <input type="text" name="email" placeholder='yourname@email.com' id="" value={ formValues.email } onChange={handleChange}/>
                     </div>        
                 </div>
                 <div>
@@ -53,18 +61,16 @@ const ContactPage =() => {
                         <textarea type="text" name="message" placeholder="Send me a message and I'll reply as soon as possible" id=""  value={ formValues.message } onChange={handleChange}/>
                     </div>                    
                 </div>
-                <div>
-                    <div className="form-field">
-                        <input type="checkbox" name="checkbox" id="" value={ formValues.email } onChange={handleChange}/>
-                    </div>        
+                <div className='check'>
+                    <input type="checkbox" name="checkbox" id="checkbox"  checked={formValues.checkbox} onChange={handleCheck} />
+                    <label htmlFor="checkbox">You agree to providing your data to {portfolioName} who may contact you.</label>
                 </div>
+                <p className='selected'>{ isChecked ? "Not Selected" : "Selected"}</p>
                 <div>
                     <div className="form-field">
                         <input type="Submit" id=""/>
-                    </div>               
+                    </div>
                 </div>
-                
-                
             </form>
             
         </div>

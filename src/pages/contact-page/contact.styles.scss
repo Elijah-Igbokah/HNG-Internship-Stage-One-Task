@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 92px 0px;
-    height: 100vh;
+    padding: 92px 20%;
+    // height: 100vh;
 
     .contact-form{
-        width: 720px;
-        height: 500px;
+        
+
 
         h1{
             font-weight: 600;
@@ -22,7 +22,6 @@
             line-height: 30px;
             color: #475467;
             margin-bottom: 48px;
-
         }
 
         form{
@@ -36,6 +35,22 @@
                 .firstname, .lastname{
                     width: 100%;
                 }
+            }
+
+            .selected{
+                font-size: 12px;
+                margin-bottom: 24px;
+                color: red;
+        
+            }
+            .check{
+                display: flex;
+                gap: 10px;
+            
+                &>label{
+                    font-size: 12px;
+                }
+                
             }
         }
     }
@@ -82,5 +97,10 @@
             outline-color: #8891a3;
         }
     }
+
+
+    
+    
     
 }
+
