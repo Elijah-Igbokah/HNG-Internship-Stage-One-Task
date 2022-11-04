@@ -7,7 +7,7 @@ import "./contact.styles.scss";
 
 const ContactPage =() => {
 
-    const initialValues = {firstName: "", lastName:"", email:"", message:"" };
+    const initialValues = {firstName: "", lastName:"", email:"", message:"", isChecked: false };
 
     const [formValues, setFormValues] = useState(initialValues);
 
@@ -44,7 +44,7 @@ const ContactPage =() => {
                 <div>
                     <div className="form-field">
                         <label htmlFor="email">Email</label>
-                        <input type="text" name="email" placeholder='yourname@email.com' id="" value={ formValues.email } onChange={handleChange}/>
+                        <input type="text" name="email" placeholder='yourname@email.com' id="" value={ formValues.isChecked } onChange={handleChange}/>
                     </div>        
                 </div>
                 <div>
@@ -52,6 +52,11 @@ const ContactPage =() => {
                         <label htmlFor="name">Message</label>
                         <textarea type="text" name="message" placeholder="Send me a message and I'll reply as soon as possible" id=""  value={ formValues.message } onChange={handleChange}/>
                     </div>                    
+                </div>
+                <div>
+                    <div className="form-field">
+                        <input type="checkbox" name="checkbox" id="" value={ formValues.email } onChange={handleChange}/>
+                    </div>        
                 </div>
                 <div>
                     <div className="form-field">

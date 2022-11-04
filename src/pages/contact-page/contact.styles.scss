@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 92px 0px;
+    height: 100vh;
 
     .contact-form{
         width: 720px;
@@ -14,11 +15,13 @@
             line-height: 44px;
             letter-spacing: -0.02em;
             color: #101828;
+            margin-bottom: 20px;
         }
         &>p{
             font-size: 20px;
             line-height: 30px;
             color: #475467;
+            margin-bottom: 48px;
 
         }
 
@@ -28,7 +31,6 @@
                 display: flex;
                 flex-direction: row;
                 width: 100%;
-                // justify-content: space-between;
                 column-gap: 24px;
 
                 .firstname, .lastname{
@@ -69,6 +71,15 @@
 
         &::placeholder{
             color: #667085;
+        }
+    }
+
+    textarea{
+        height: 158px;
+        padding: 1%;
+
+        &:focus{
+            outline-color: #8891a3;
         }
     }
     
